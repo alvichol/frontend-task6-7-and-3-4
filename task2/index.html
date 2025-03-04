@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меню с JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="mobile-menu-header">
+        <label class="hamburger-menu-button">
+          <svg
+            height="32px"
+            viewBox="0 0 32 32"
+            width="32px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="white"
+              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+            />
+          </svg>
+        </label>
+        <div class="mobile-menu">
+          <ul>
+            <li>
+              <div class="mobile-menu-element">
+                <label class="mobile-menu-label">
+                  Продукты
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"
+                    ></path>
+                  </svg>
+                </label>
+                <ul class="mobile-menu-sublist outer-sublist">
+                  <li>
+                    <label class="mobile-menu-label">
+                      Вычисления и хранение (IaaS)
+                    </label>
+                    <ul class="mobile-menu-sublist inner-sublist">
+                      <li>
+                        Виртуальная инфраструктура<br />
+                        <span
+                          >Комплексное решение для развертывания виртуальной
+                          ИТ-инфраструктуры для проектов разных масштабов</span
+                        >
+                      </li>
+                      <li>
+                        Виртуальная инфраструктура. Аттестованный сегмент
+                        152-ФЗ<br />
+                        <span>Защищенное облако для ИСПДн</span>
+                      </li>
+                      <li>
+                        Виртуальная инфраструктура с GPU<br />
+                        <span>Графический ускоритель</span>
+                      </li>
+                      <li>
+                        MWS Container Platform<br />
+                        <span>
+                          Надежная платформа для разработки и эксплуатации
+                          контейнеризированных приложений в промышленных
+                          масштабах
+                        </span>
+                      </li>
+                      <li>
+                        Объектное хранилище<br />
+                        <span>
+                          Сервис хранения данных любого объема и формата c
+                          доступом к хранимой информации через интернет из любой
+                          точки мира
+                        </span>
+                      </li>
+                      <li>
+                        Резервное копирование<br />
+                        <span>
+                          Резервное копирование данных с персональных
+                          компьютеров, VDI и любых устройств с пользовательскими
+                          ОС
+                        </span>
+                      </li>
+                      <li>
+                        VDI<br />
+                        <span>Виртуальные рабочие места</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <label class="mobile-menu-label">
+                      Бизнес-приложения (SaaS)
+                    </label>
+                    <ul class="mobile-menu-sublist inner-sublist">
+                      <li>
+                        Тут ничего нет...<br />
+                        <span>В оригинальном меню слишком много пунктов!</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <label class="mobile-menu-label">
+                      Базы данных и потоковые сервисы (DBaaS)
+                    </label>
+                    <ul class="mobile-menu-sublist inner-sublist">
+                      <li>
+                        Тут ничего нет...<br />
+                        <span>В оригинальном меню слишком много пунктов!</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <label class="mobile-menu-label">
+                      Кибербезопасность (SECaaS)
+                    </label>
+                    <ul class="mobile-menu-sublist inner-sublist">
+                      <li>
+                        Тут ничего нет...<br />
+                        <span>В оригинальном меню слишком много пунктов!</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <label class="mobile-menu-label">
+                      Сеть и медиа (NaaS)
+                    </label>
+                    <ul class="mobile-menu-sublist inner-sublist">
+                      <li>
+                        Тут ничего нет...<br />
+                        <span>В оригинальном меню слишком много пунктов!</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <label class="mobile-menu-label"> ИИ-облако </label>
+                    <ul class="mobile-menu-sublist inner-sublist">
+                      <li>
+                        Тут ничего нет...<br />
+                        <span>В оригинальном меню слишком много пунктов!</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="mobile-menu-element">
+                <label class="mobile-menu-label">
+                  Решения
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"
+                    ></path>
+                  </svg>
+                </label>
+                <ul class="mobile-menu-sublist outer-sublist">
+                  <li>
+                    <label class="mobile-menu-label">
+                      Решения по отраслям</label
+                    >
+                    <ul class="mobile-menu-sublist inner-sublist">
+                      <li>
+                        Информационные технологии<br />
+                        <span>
+                          Масштабируйте вычислительные ресурсы, ускоряйте
+                          тестирование ИТ-продуктов и запускайте
+                          отказоустойчивые приложения в облаке MWS
+                        </span>
+                      </li>
+                      <li>
+                        Промышленность<br />
+                        <span>
+                          Облачные технологии MWS помогают увеличить
+                          эффективность процессов на промышленных предприятиях и
+                          бесшовно перейти в Индустрию 4.0
+                        </span>
+                      </li>
+                      <li>
+                        Розничная торговля и e-commerce<br />
+                        <span>
+                          Узнайте лучше своих клиентов и точки продаж с помощью
+                          наших решений
+                        </span>
+                      </li>
+                      <li>
+                        Транспорт и логистика<br />
+                        <span>
+                          Повысьте безопасность перевозок и оптимизируйте
+                          операционные расходы с помощью облачных решений MWS
+                        </span>
+                      </li>
+                      <li>
+                        Строительство и эксплуатация<br />
+                        <span>
+                          Повысьте эффективность проектирования и эксплуатации
+                          зданий с помощью облачных технологий MWS
+                        </span>
+                      </li>
+                      <li>
+                        Медицина и фармацевтика<br />
+                        <span>
+                          Ускоряйте выпуск новых медицинских препаратов и услуг,
+                          создавайте рекомендательные системы для врачей и
+                          пациентов с помощью облачных решений MWS
+                        </span>
+                      </li>
+                      <li>
+                        Финансы и страхование<br />
+                        <span>
+                          Повысьте масштабируемость и доступность веб-сервисов и
+                          снизьте стоимость клиентского обслуживания с помощью
+                          облачных решений MWS
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <label class="mobile-menu-label"> Решения по задачам</label>
+                    <ul class="mobile-menu-sublist inner-sublist">
+                      <li>
+                        Тут ничего нет...<br />
+                        <span>В оригинальном меню слишком много пунктов!</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <label class="mobile-menu-element"> Облачный интегратор </label>
+            </li>
+            <li>
+              <label class="mobile-menu-element"> Партнерские сервисы </label>
+            </li>
+            <li>
+              <label class="mobile-menu-element"> Стать партнером </label>
+            </li>
+            <li>
+              <div class="mobile-menu-element">
+                <label class="mobile-menu-label">
+                  События
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"
+                    ></path>
+                  </svg>
+                </label>
+                <ul class="mobile-menu-sublist inner-sublist no-middle-menu">
+                  <li>
+                    Новости<br />
+                    <span>Статьи об услугах, кейсы, дайджесты</span>
+                  </li>
+                  <li>
+                    Акции<br />
+                    <span>Специальные предложения на облачные сервисы</span>
+                  </li>
+                  <li>
+                    Мероприятия<br />
+                    <span>Вебинары, конференции, митапы</span>
+                  </li>
+                  <li>
+                    Статьи<br />
+                    <span>Новости сервисов, платформы</span>
+                  </li>
+                  <li>
+                    Cloud DevOps<br />
+                    <span>Бесплатный курс по DevOps, Kubernetes</span>
+                  </li>
+                  <li>
+                    Основы сетевых технологий<br />
+                    <span>Бесплатный курс об устройстве сетей</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="mobile-menu-element">
+                <label class="mobile-menu-label">
+                  Поддержка
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"
+                    ></path>
+                  </svg>
+                </label>
+                <ul class="mobile-menu-sublist inner-sublist no-middle-menu">
+                  <li>Контакты</li>
+                  <li>Документация</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <label class="mobile-menu-element"> Карьера </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="menu">
+        <li class="menu-item">
+          <label class="clickable menu-label">
+            Продукты
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"
+              ></path>
+            </svg>
+          </label>
+          <div class="submenu">
+            <div class="sidelist">
+              <h2>Продукты</h2>
+              <ul>
+                <li>
+                  <label class="sidelist-label iaas-label">
+                    Вычисления и хранение (IaaS)
+                  </label>
+                </li>
+                <li>
+                  <label class="sidelist-label saas-label">
+                    Бизнес-приложения (SaaS)</label
+                  >
+                </li>
+                <li>
+                  <label class="sidelist-label dbaas-label">
+                    Базы данных и потоковые сервисы (DBaaS)</label
+                  >
+                </li>
+                <li>
+                  <label class="sidelist-label secaas-label">
+                    Кибербезопасность (SECaaS)</label
+                  >
+                </li>
+                <li>
+                  <label class="sidelist-label naas-label">
+                    Сеть и медиа (NaaS)</label
+                  >
+                </li>
+                <li>
+                  <label class="sidelist-label ai-label"> ИИ-облако</label>
+                </li>
+              </ul>
+            </div>
+            <div class="services-menu-container iaas-menu">
+              <h1>Вычисления и хранение (IaaS)</h1>
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_icon_5892a15699.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Виртуальная инфраструктура</h3>
+                    <p>
+                      Комплексное решение для развертывания
+                      виртуальной&nbsp;ИТ-инфраструктуры для проектов
+                      разных&nbsp;масштабов
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_152_icon_fd8ffd9674.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>
+                      Виртуальная инфраструктура. Аттестованный&nbsp;сегмент
+                      152-ФЗ
+                    </h3>
+                    <p>Защищенное облако для ИСПДн</p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/VI_GPU_icon_5b5af9161e.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Виртуальная инфраструктура с GPU</h3>
+                    <p>Графический ускоритель</p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/Kuber_icon_39ed7a8fdf.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>MWS Container Platform</h3>
+                    <p>
+                      Надежная платформа для разработки
+                      и&nbsp;эксплуатации&nbsp;контейнеризированных
+                      приложений&nbsp;в&nbsp;промышленных масштабах
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/s3_icon_0a3a26b5d4.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Объектное хранилище</h3>
+                    <p>
+                      Сервис хранения данных любого объема и
+                      формата&nbsp;с&nbsp;доступом к хранимой информации
+                      через&nbsp;интернет из любой точки мира
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/backup_icon_b427ce391e.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Резервное копирование</h3>
+                    <p>
+                      Резервное копирование данных с
+                      персональных&nbsp;компьютеров, VDI и любых
+                      устройств&nbsp;с&nbsp;пользовательскими ОС
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/vdi_icon_73cf48b578.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>VDI</h3>
+                    <p>Виртуальные рабочие места</p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/DR_icon_efd7415ba0.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Катастрофоустойчивая архитектура</h3>
+                    <p>Послеаварийное восстановление</p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/state_cloud_icon_aa739087b6.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Импортозамещённое облако</h3>
+                    <p>Облако с защитой информации. Бета-тест</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-menu-container saas-menu">
+              <h1>Бизнес-приложения (SaaS)</h1>
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/it_icon_851745506d.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Тут ничего нет...</h3>
+                    <p>В оригинальном меню слишком много пунктов!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-menu-container dbaas-menu">
+              <h1>Базы данных и потоковые сервисы (DBaaS)</h1>
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/it_icon_851745506d.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Тут ничего нет...</h3>
+                    <p>В оригинальном меню слишком много пунктов!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-menu-container secaas-menu">
+              <h1>Кибербезопасность (SECaaS)</h1>
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/it_icon_851745506d.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Тут ничего нет...</h3>
+                    <p>В оригинальном меню слишком много пунктов!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-menu-container naas-menu">
+              <h1>Сеть и медиа (NaaS)</h1>
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/it_icon_851745506d.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Тут ничего нет...</h3>
+                    <p>В оригинальном меню слишком много пунктов!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-menu-container ai-menu">
+              <h1>ИИ-облако</h1>
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/it_icon_851745506d.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Тут ничего нет...</h3>
+                    <p>В оригинальном меню слишком много пунктов!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="menu-item">
+          <label class="clickable menu-label">
+            Решения
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"
+              ></path>
+            </svg>
+          </label>
+          <div class="submenu">
+            <div class="sidelist">
+              <h2>Решения</h2>
+              <ul>
+                <li>
+                  <label class="sidelist-label solutions1-label">
+                    Решения по отраслям
+                  </label>
+                </li>
+                <li>
+                  <label class="sidelist-label solutions2-label">
+                    Решения по задачам
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="services-menu-container solutions1-menu">
+              <h1>Решения по отраслям</h1>
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/it_icon_851745506d.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Информационные технологии</h3>
+                    <p>
+                      Масштабируйте вычислительные ресурсы, ускоряйте
+                      тестирование ИТ-продуктов и запускайте отказоустойчивые
+                      приложения в облаке MWS
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/industry_icon_cb60898c63.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Промышленность</h3>
+                    <p>
+                      Облачные технологии MWS помогают увеличить эффективность
+                      процессов на промышленных предприятиях и бесшовно перейти
+                      в Индустрию 4.0
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/retail_icon_98a5f7ccf1.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Розничная торговля и e-commerce</h3>
+                    <p>
+                      Узнайте лучше своих клиентов и точки продаж с помощью
+                      наших решений
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/logistics_icon_d4cb73e75c.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Транспорт и логистика</h3>
+                    <p>
+                      Повысьте безопасность перевозок и оптимизируйте
+                      операционные расходы с помощью облачных решений MWS
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/construction_icon_50b4f69a22.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Строительство и эксплуатация</h3>
+                    <p>
+                      Повысьте эффективность проектирования и эксплуатации
+                      зданий с помощью облачных технологий MWS
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/medicine_icon_5d7e887c13.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Медицина и фармацевтика</h3>
+                    <p>
+                      Ускоряйте выпуск новых медицинских препаратов и услуг,
+                      создавайте рекомендательные системы для врачей и пациентов
+                      с помощью облачных решений MWS
+                    </p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/finance_icon_61f0236f3e.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Финансы и страхование</h3>
+                    <p>
+                      Повысьте масштабируемость и доступность веб-сервисов и
+                      снизьте стоимость клиентского обслуживания с помощью
+                      облачных решений MWS
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-menu-container solutions2-menu">
+              <h1>Решения по задачам</h1>
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://ru-msk-2.store.cloud.mts.ru/uploads/it_icon_851745506d.svg"
+                  />
+                  <div class="service-desc">
+                    <h3>Тут ничего нет...</h3>
+                    <p>В оригинальном меню слишком много пунктов!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#"><span class="clickable">Облачный интегратор</span></a>
+        </li>
+        <li class="menu-item">
+          <a href="#"><span class="clickable">Партнерские сервисы</span></a>
+        </li>
+        <li class="menu-item">
+          <a href="#"><span class="clickable">Стать партнером</span></a>
+        </li>
+        <li class="menu-item">
+          <label class="clickable menu-label">
+            События
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"
+              ></path>
+            </svg>
+          </label>
+          <div class="submenu">
+            <div class="sidelist">
+              <h2>События</h2>
+              <p>
+                Рассказываем о наших мероприятиях, делимся новостями, обучаем
+              </p>
+            </div>
+            <div class="services-menu-container single-item">
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    src="https://mws.ru/_ipx/s_40x40/header/promo-icon.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Акции</h3>
+                    <p>Специальные предложения на облачные сервисы</p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://mws.ru/_ipx/s_40x40/header/news-icon.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Новости</h3>
+                    <p>Статьи об услугах, кейсы, дайджесты</p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://mws.ru/_ipx/s_40x40/header/events-icon.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Мероприятия</h3>
+                    <p>Вебинары, конференции, митапы</p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://mws.ru/_ipx/s_40x40/header/article-icon.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Статьи</h3>
+                    <p>Новости сервисов, платформы</p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://mws.ru/_ipx/s_40x40/header/devops-course-icon.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Cloud DevOps</h3>
+                    <p>Бесплатный курс по DevOps и Kubernetes</p>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://mws.ru/_ipx/s_40x40/header/network-course-icon.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc">
+                    <h3>Основы сетевых технологий</h3>
+                    <p>Бесплатный курс об устройстве сетей</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <label class="clickable menu-label">
+            Поддержка
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4.69 9c-.836 0-1.255 1.011-.663 1.603l3.442 3.443C9.605 16.181 10.673 17.25 12 17.25s2.395-1.068 4.53-3.204l3.443-3.443a.94.94 0 1 0-1.327-1.328l-3.442 3.443c-1.106 1.105-1.804 1.799-2.38 2.238-.534.407-.736.416-.824.416s-.29-.01-.823-.416c-.577-.44-1.275-1.133-2.38-2.238L5.354 9.275A.94.94 0 0 0 4.691 9Z"
+              ></path>
+            </svg>
+          </label>
+          <div class="submenu">
+            <div class="sidelist">
+              <h2>Поддержка</h2>
+              <p>Техническая поддержка 24/7</p>
+            </div>
+            <div class="services-menu-container single-item">
+              <div class="services-menu">
+                <div class="service">
+                  <img
+                    src="https://mws.ru/_ipx/s_40x40/header/news-icon.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc header-only">
+                    <h3>Контакты</h3>
+                  </div>
+                </div>
+                <div class="service">
+                  <img
+                    src="https://mws.ru/_ipx/s_40x40/header/article-icon.svg"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="service-desc header-only">
+                    <h3>Документация</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#"><span class="clickable">Карьера</span></a>
+        </li>
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
