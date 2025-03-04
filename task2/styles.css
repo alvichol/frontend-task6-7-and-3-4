@@ -302,7 +302,7 @@ body {
   .mobile-menu-label.active ~ .mobile-menu-sublist {
     display: block;
   }
-  .mobile-menu-checkbox:checked ~ svg {
+  .mobile-menu-label.active svg {
     transform: rotate(180deg);
   }
 }
